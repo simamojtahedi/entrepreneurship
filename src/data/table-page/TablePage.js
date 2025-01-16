@@ -1,0 +1,58 @@
+export const table_page = [
+    {
+        id: "1",
+        code: "0001313",
+        title: "مبانی و روش کار با دستگاه GPS و نرم افزار Google earth",
+        department: "خدمات حمایتی و پشتیبانی",
+        type: "زنده",
+        teacher: "سیما مجتهدی",
+        provider: "نظام مهندسی",
+        rgisterDate: "1400/07/02",
+        startDate: "1400/10/12",
+        length: 6,
+        price: 120000,
+        condition: 'اتمام مهلت'
+    },
+    {
+        id: "2",
+        code: "0001988",
+        title: "کارگاه آموزش مجازی گلخانه",
+        department: "زراعت",
+        type: "زنده",
+        teacher: "سیما مجتهدی",
+        provider: "نظام مهندسی",
+        rgisterDate: "1400/07/02",
+        startDate: "1400/10/12",
+        length: 6,
+        price: 0,
+        condition: 'شروع آزمون'
+    },
+    {
+        id: "3",
+        code: "0001313",
+        title: "آشنایی با فرآیند نظارت و مدیریت در واگذاری اراضی به بهره برداران",
+        department: "خدمات حمایتی و پشتیبانی",
+        type: "زنده",
+        teacher: "سیما مجتهدی",
+        provider: "نظام مهندسی",
+        rgisterDate: "1400/07/02",
+        startDate: "1400/10/12",
+        length: 6,
+        price: 0,
+        condition: 'اتمام مهلت'
+    },
+    {
+        id: "4",
+        code: "0001313",
+        title: "معرفی اعتبارات تخصیص یافته جهت ارتقای ضریب خودکفایی در محصولات راهبردی استان یزد",
+        department: "مدیریت",
+        type: "زنده",
+        teacher: "سیما مجتهدی",
+        provider: "نظام مهندسی",
+        rgisterDate: "1400/07/02",
+        startDate: "1400/10/12",
+        length: 6,
+        price: 0,
+        condition: 'پایان آزمون'
+    },
+]

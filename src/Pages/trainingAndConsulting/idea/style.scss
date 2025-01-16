@@ -1,0 +1,123 @@
+
+.ideaContainer {
+    thead {
+        background-color: rgb(236, 236, 236);
+        text-align: center;
+    }
+
+    .tab-content {
+        border: 1px solid #f1f1f1;
+        min-height: 430px;
+        border-top: none;
+    }
+}
+
+.newidea {
+    background: var(--clr-content-bg);
+    transition: var(--clr-transition);
+
+    .rmdp-day {
+        span {
+            margin: 0 !important;
+        }
+    }
+
+    .investItem {
+        margin: .8rem 0;
+        display: flex;
+        align-items: flex-start;
+
+        .form-checkbox {
+            margin: .5rem 0 !important;
+
+            label {
+                padding: .3rem .4rem;
+                font-size: .8rem;
+                cursor: pointer;
+                border: 1px solid #e6e6e6;
+                color: var(--clr-font);
+                transition: var(--clr-transition);
+            }
+        }
+
+        label {
+            min-width: 240px;
+            cursor: default;
+            color: var(--clr-font);
+            transition: var(--clr-transition);
+        }
+    
+        input, select, textarea {
+            min-width: 300px;
+            border: 1px solid #CED4DA;
+            border-radius: 5px;
+            font-size: .8rem;
+            padding: .4rem;
+        }
+    
+        input[type="radio"] {
+            min-width: auto;
+            padding: 0;
+            margin: 0;
+            margin-top: .5rem;
+            margin-left: .5rem;
+        }
+    
+        textarea {
+            min-height: 90px;
+        }
+    
+        span {
+            color: #777;
+            font-size: .75rem;
+            margin-right: .5rem;
+        }
+    
+        input[type=number] {
+            min-width: 93px;
+            width: 93px;
+            margin-left: .6rem;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .investItem {
+        flex-direction: column !important;
+    }
+    
+    .newIdea {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: flex-start;
+       
+        .ideaItem {
+            margin: .8rem 0;
+            display: flex;
+            flex-direction: column;
+            .form-checkbox {
+                label {
+                    min-width: 250px;
+                }
+            }
+        }
+        label {
+            min-width: 200px;
+            padding: 0;
+            margin-bottom: .3rem;
+        }
+        input, select, textarea {
+            min-width: 250px;
+        }
+        span {
+            margin-right: 0rem;
+            margin-top: 1rem;
+        }
+        input[type=number] {
+            min-width: 80px;
+            width: 80px;
+            margin-top: .6rem;
+        }
+    }
+}

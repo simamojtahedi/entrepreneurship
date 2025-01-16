@@ -1,0 +1,104 @@
+
+.rbc-calendar {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.rbc-header {
+    padding: .2rem !important;
+}
+
+.rbc-row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.rbc-event {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+.rbc-header {
+    text-align: right !important;
+    padding: .3rem !important;
+    border-left: 1px solid #DDD;    
+}
+
+.rbc-time-header {
+    margin-right: 0 !important;
+}
+
+.rbc-day-bg {
+    flex: 1 0;
+    border-left: 1px solid #DDD;    
+}
+
+.rbc-btn-group {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.rbc-btn-group > button:first-child:not(:last-child) {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.rbc-btn-group > button:last-child:not(:first-child) {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-top-right-radius:  0;
+    border-bottom-right-radius: 0;
+}
+
+.rbc-time-header-gutter {
+    width: 47px !important;
+    min-width: 47px !important;
+    max-width: 47px !important;
+    border-left: 1px solid #DDD;
+}
+
+.rbc-timeslot-group {
+    border-left: 1px solid #DDD;
+}
+
+.rbc-time-header-content {
+    padding-left: 1rem;
+    border-left: 1px solid #DDD;
+}
+
+.rbc-header:last-of-type {
+    border-left: none !important;
+}
+
+.rbc-time-view .rbc-row {
+    min-height: 28px !important;
+}
+
+.rbc-row-segment {
+    padding: 3px 1px 1px 1px !important;
+}
+
+.rbc-agenda-date-cell {
+    border-left: 1px solid #DDD;
+
+}
+
+.rbc-btn-group button{
+    color: var(--clr-font) !important;
+}
+
+.rbc-toolbar button:hover {
+    color: #373a3c;
+    background-color: var(--clr-hover) !important;
+    border-color: var(--clr-hover) !important;
+}
+
+.rbc-active {
+    background-color: var(--clr-hover) !important;
+}
+
+.rbc-toolbar button {
+    color: var(--clr-font) !important;
+}

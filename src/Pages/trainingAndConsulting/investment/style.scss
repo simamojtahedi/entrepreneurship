@@ -1,0 +1,127 @@
+
+.investmentContainer {
+
+    thead {
+        background-color: rgb(236, 236, 236);
+        text-align: center;
+    }
+
+    .tab-content {
+        border: 1px solid var(--clr-hover);
+        min-height: 430px;
+        border-top: none;
+    }
+}
+
+.all-investments {
+    padding: 1rem;
+    border: 1px solid var(--clr-hover);
+    border-top: none;
+    min-height: 430px;
+}
+
+.newInvestment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--clr-content-bg);
+    transition: var(--clr-transition);
+
+    .investItem {
+        margin: .8rem 0;
+        display: flex;
+        align-items: flex-start;
+
+        .inv-formik-error {
+            margin-top: .3rem;
+            margin-right: .3rem;
+        }
+
+        .form-checkbox {
+            margin: .5rem 0 !important;
+
+            label {
+                padding: .3rem .4rem;
+                font-size: .8rem;
+                cursor: pointer;
+                border: 1px solid #e6e6e6;
+                color: var(--clr-font);
+                transition: var(--clr-transition);
+            }
+        }
+    }
+
+    label {
+        min-width: 240px;
+        cursor: default;
+        color: var(--clr-font);
+        transition: var(--clr-transition);
+    }
+
+    input, select, textarea {
+        min-width: 300px;
+        border: 1px solid #CED4DA;
+        border-radius: 5px;
+        font-size: .8rem;
+        padding: .4rem;
+    }
+
+    input[type="radio"] {
+        min-width: auto;
+        padding: 0;
+        margin: 0;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+
+    textarea {
+        min-height: 90px;
+    }
+
+    span {
+        color: #777;
+        font-size: .75rem;
+        margin-right: .5rem;
+    }
+
+    input[type=number] {
+        min-width: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 760px) {
+    .newInvestment {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: flex-start;
+        .investItem {
+            margin: .8rem 0;
+            display: flex;
+            flex-direction: column;
+            .form-checkbox {
+                label {
+                    min-width: 250px;
+                }
+            }
+        }
+        label {
+            min-width: 200px;
+            padding: 0;
+            margin-bottom: .3rem;
+        }
+        input, select, textarea {
+            min-width: 250px;
+        }
+        span {
+            margin-right: 0rem;
+            margin-top: 1rem;
+        }
+        input[type=number] {
+            min-width: 80px;
+            width: 80px;
+            margin-top: .6rem;
+        }
+    }
+}

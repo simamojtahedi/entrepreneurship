@@ -1,0 +1,112 @@
+
+.modal-content {
+    background-color: var(--clr-light);
+}
+
+.mpackage-phone-numbers {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--clr-hover);
+    padding-bottom: .5rem;
+
+    h6 {
+        color: var(--clr-head-font);
+        font-weight: bold;
+        font-size: .9rem;
+        margin-bottom: .6rem;
+    }
+}
+
+.mpackage-timing {
+    margin-bottom: 1rem;
+
+    h6 {
+        color: var(--clr-head-font);
+        font-weight: bold;
+        font-size: .9rem;
+        margin-bottom: .6rem;
+    }
+}
+
+.mpackage-pricing {
+    border: 1px solid var(--clr-hover);
+    padding: .6rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-hover);
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.modal-innovation-request-details {
+    border-bottom: 1px solid var(--clr-hover);
+    margin-bottom: 1rem;
+
+    h6 {
+        color: var(--clr-head-font);
+        font-weight: bold;
+        font-size: .9rem;
+        margin-bottom: .6rem;
+    }
+
+    div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: .8rem;
+
+        span {
+            flex: 1;
+            font-size: .9rem;
+
+            &:last-of-type {
+                font-weight: bold;
+                flex: 2;
+            }
+        }
+    }
+}
+
+.modal-innovation-request-expert {
+    h6 {
+        color: var(--clr-head-font);
+        font-weight: bold;
+        font-size: .9rem;
+        margin-bottom: .6rem;
+    }
+
+    div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: .8rem;
+
+        span {
+            flex: 1;
+            font-size: .9rem;
+
+            &:last-of-type {
+                font-weight: bold;
+                flex: 2;
+            }
+        }
+    }
+}
+
+
+
+.OperatorSupportActionAnswer {
+    margin-top: 1rem;
+
+    h6 {
+        border-bottom: 1px solid var(--clr-hover);
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: bold;
+        color: var(--clr-head-font);
+    }
+}

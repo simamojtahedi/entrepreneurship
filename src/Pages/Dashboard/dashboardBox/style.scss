@@ -1,0 +1,27 @@
+
+.box_conatiner {
+    background: var(--clr-light);
+    color: var(--clr-font);
+    box-shadow: 0 0 1px 1px var(--clr-main);
+    border-radius: 15px;
+    min-height: 100px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+#admin, #operator, #evaluator, #demo, #challenge_opportunity {
+    .BoxTitle {
+        background-color: #3F489B;
+    }
+}
+
+#admin, #operator, #evaluator, #demo, #challenge_opportunity {
+    .box_conatiner {
+        box-shadow: 0 0 1px 1px #3F489B;
+    }
+}
+
+@media (max-width: 990px) {
+
+}

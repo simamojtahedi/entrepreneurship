@@ -1,0 +1,62 @@
+.table_items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    .user_active {
+        background-color: rgb(71, 231, 71);
+        margin: 0 .3rem;
+        padding: .15rem .8rem;
+        border-radius: 4px;
+        font-size: .85rem;
+    }
+
+    .user_notRegistered {
+        background-color: rgb(231, 71, 71);
+        margin: 0 .3rem;
+        padding: .15rem .8rem;
+        border-radius: 4px;
+        font-size: .85rem;
+    }
+}
+
+.edit_user_tabs {
+    .tab-content {
+        min-height: 60vh;
+        border: 1px solid var(--clr-hover);
+        border-top: none;
+        padding: 1rem;
+        padding-top: 2rem;
+        transition: var(--clr-transition);
+    }
+
+    .edit_user_avatar {
+        background-color: var(--clr-light);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 1rem;
+        transition: var(--clr-transition);
+
+        img {
+            width: 100px;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+            border: 2px solid var(--clr-hover);
+            margin-bottom: 1rem;
+            transition: var(--clr-transition);
+        }
+
+    }
+    
+    .notRegistered {
+        background-color: rgb(231, 71, 71);
+        margin: 0 .3rem;
+        padding: .15rem .8rem;
+        border-radius: 4px;
+        font-size: .85rem;
+    }
+}

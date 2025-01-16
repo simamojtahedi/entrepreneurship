@@ -1,0 +1,167 @@
+
+.messagesContainer {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    min-height: 80vh;
+    display: flex;
+    overflow: hidden;
+
+    .sidebarNav {
+        background: var(--clr-content-bg);
+        color: var(--clr-font);
+        transition: var(--clr-transition);
+        flex: 1;
+        border-left: 1px solid #e6e6e6;
+
+        .message_title {
+            min-width: 100px;
+        }
+
+        .accordion-button::after {
+            width: 0.85rem !important;
+            height: 0.85rem !important;
+            background-size: 0.85rem !important;
+        }
+
+        .accordion-body {
+            padding: 0 !important;
+
+            .messageLink {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: .5rem !important;
+                border-bottom: 1px solid #e6e6e6 ;
+                cursor: pointer;
+                transition: var(--clr-transition);
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    background-color: var(--clr-hover);
+                }
+
+                div {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid var(--clr-hover);
+                    padding-bottom: .4rem;
+                    transition: var(--clr-transition);
+
+                    h1 {
+                        font-size: .8rem !important;
+                        font-weight: bold;
+                        margin: 0;
+                        color: var(--clr-head-font);
+                        transition: var(--clr-transition);
+                    }
+                    span {
+                        color: var(--clr-font);
+                        font-size: .7rem !important;
+                        transition: var(--clr-transition);
+                    }
+                }
+
+                p {
+                    color: var(--clr-bw);
+                    padding-top: .3rem;
+                    margin: 0;
+                    font-size: .8rem;
+                    line-height: 1.6;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .messagebox {
+        background: var(--clr-content-bg);
+        color: var(--clr-font);
+        transition: var(--clr-transition);
+        flex: 3;
+
+        .messageButtons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-bottom: 1px solid #e6e6e6;
+        }
+    }
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    font-size: .8rem !important;
+    padding: .8rem .5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #036eb6 !important;
+    background-color: #eef5fc !important;
+}
+
+.messageContent {
+    padding: 3rem 2rem 1rem;
+    width: 80%;
+    margin: auto;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        border-top: 1px solid var(--clr-hover);
+    }
+}
+
+.newMessageBox {
+    width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e6e6e6 ;
+    border-radius: 10px;
+    margin: 2.5rem auto;
+    form {
+        width: 100%;
+        margin-top: 1rem;
+        .newMessageItem {
+            width: 100%;
+            input, textarea {
+                width: 100%;
+                margin: .3rem 0;
+                border: 1px solid #e6e6e6;
+                border-radius: 5px;
+                padding: .4rem .6rem;
+            }
+            textarea {
+               min-height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .messagesContainer {
+        flex-direction: column;
+    }
+
+    .messagesContainer .messagebox .messageButtons {
+        justify-content: center;
+    }
+
+    .messageContent {
+        padding: 2rem .5rem 1rem;
+        width: 90%;
+    }
+
+    .newMessageBox {
+        width: 90%;
+    }
+}

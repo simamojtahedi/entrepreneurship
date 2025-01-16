@@ -1,0 +1,14 @@
+
+.accordion-collapse {
+    background-color: var(--clr-content-bg);
+
+}
+
+.accordion-button {
+    background-color: var(--clr-content-bg);
+    color: var(--clr-font);
+
+    &:focus {
+        box-shadow: 0 0 3px rgba(0,0,0,.1);
+    }
+}

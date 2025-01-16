@@ -1,0 +1,88 @@
+
+.contactList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    
+    .contactInfo {
+        flex: 1;
+        margin: .5rem;
+        padding: 2rem;
+        border: 1px solid #e6e6e6;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        min-width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .4s;
+        background: var(--clr-light);
+        color: var(--clr-font);
+
+        &:nth-of-type(1) { animation-duration: .80s; }
+        &:nth-of-type(2) { animation-duration: .85s; }
+        &:nth-of-type(3) { animation-duration: .90s; }
+        &:nth-of-type(4) { animation-duration: .95s; }
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .contact-image {
+            width: 120px;
+            height: 120px;
+            color: var(--clr-main);
+        }
+
+        h6 {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 0;
+            margin-top: .8rem;
+        }
+
+        span {
+            color: var(--clr-font);
+            font-size: .8rem;
+            margin-top: .2rem;
+        }
+
+        .contactWays {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: .9rem;
+
+            a {
+                font-size: 1.6rem;
+                color: var(--clr-font);
+                transition: all .4s;
+
+                &:hover {
+                    color: var(--clr-main);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .contactList {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .contactInfo {
+            min-width: 230px;
+            width: 90%;
+            margin: .5rem 0;
+            flex: 1;
+            margin: .5rem auto;
+            padding: 2rem;
+            min-width: 230px;
+        }
+    }
+}

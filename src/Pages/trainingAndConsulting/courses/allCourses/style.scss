@@ -1,0 +1,110 @@
+
+.allCourses {
+    min-height: 100px;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #e6e6e6;
+}
+
+.courseContainer {
+    background: var(--clr-content-bg);
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    transition: var(--clr-transition);
+
+    .SingleCourseImage {
+        width: auto;
+        height: 160px;
+        margin: auto !important;
+        padding: .5rem;
+        border: 1px solid #e6e6e6;
+        background: var(--clr-content-bg);
+        transition: var(--clr-transition);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .courseStatus {
+        position: absolute;
+        top: 2%;
+        right: 3%;
+        background-color: #FEB161;
+        padding: .25rem 1.8rem;
+        border-radius: 30px;
+        color: var(--clr-white);
+        font-size: .7rem;
+    }
+
+    h1 {
+        font-size: .9rem;
+        text-align: center;
+        margin: 1rem auto;
+        font-weight: bold;
+    }
+
+    .courseItemsContainer {
+        width: 95%;
+        margin: auto;
+        margin-top: 1.5rem;
+
+        .courseItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: .8rem 0;
+    
+            span {
+                padding: 0;
+                margin: 0;
+                font-size: .8rem;
+            }
+    
+            p {
+                padding: 0;
+                margin: 0;
+                font-size: .8rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    a {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 760px) {
+    
+    .allCourses {
+        padding: .5rem;
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        > div {
+            width: 100%;
+        }
+    }
+
+    .courseContainer {
+        h1 {
+            font-size: .75rem;
+        }
+        .courseItemsContainer {
+            .courseItem {
+                margin: .8rem 0;
+        
+                span {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}

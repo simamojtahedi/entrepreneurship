@@ -1,0 +1,126 @@
+
+    
+.tooltip-inner {
+    background: var(--clr-main) !important;
+    font-family: 'vazir' !important;
+}
+
+.tooltip-arrow {
+    display: none !important;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100px;
+    background: var(--clr-main);
+    border-left: 1px solid var(--clr-hover);
+    transition: var(--clr-transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+    overflow: auto;
+
+    img {
+        width: 80%;
+        display: block;
+        margin: .5rem auto 2rem;
+    }
+
+    .sidebar_nav {
+        height: auto;
+        padding: 0;
+
+        a {
+            background-color: var(--clr-white);
+            color: #000;
+            font-size: 1.4rem;
+            box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+            border-radius: 12px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: .5rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--clr-transition);
+            overflow: hidden;
+
+            button {
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+        
+                &:focus {
+                    background-color: transparent !important;
+                    border: none;
+                    box-shadow: none;
+                }
+
+                svg {
+                    color: #282C36;
+                    font-size: 1.6rem;
+                }
+            }
+
+            &:hover {
+                color: #3E479B;
+            }
+        }
+
+        .sidebar_active {
+            color: var(--clr-white);
+            background-color: var(--clr-main);
+            box-shadow: none;
+            border: 1px solid var(--clr-hover);
+
+            &:hover {
+                color: var(--clr-content);
+            }
+
+            svg {
+                color: var(--clr-white);
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.show-sidebar {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .show-sidebar {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 0;
+        z-index: 3;
+        width: 100px;
+        text-align: center;
+        z-index: 103;
+
+        svg {
+            font-size: 2rem;
+            transform: rotate(270deg);
+            cursor: pointer;
+        }
+    }
+
+    .sidebar {
+        transform: translateX(110%);
+        padding-top: 3rem;
+    }
+
+    .show_sidebar {
+        transform: translateX(0);
+    }
+}

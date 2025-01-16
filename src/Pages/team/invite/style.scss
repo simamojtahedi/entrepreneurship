@@ -1,0 +1,31 @@
+
+.inviteTabs {
+    width: 100%;
+
+    .tab-content {
+        border: 1px solid #f1f1f1;
+        min-height: 430px;
+        border-top: none;
+        background: var(--clr-content-bg);
+        transition: var(--clr-transition);
+        padding: 1rem;
+
+        .inviteItem {
+            display: flex;
+            align-items: center;
+
+            label {
+                min-width: 170px;
+            }
+
+            input {
+                width: 250px;
+                border: 1px solid #036eb6aa;
+                padding: 0.2rem 0.5rem;
+                border-radius: 5px;
+                outline: none;
+            }
+        }
+    }
+}
+

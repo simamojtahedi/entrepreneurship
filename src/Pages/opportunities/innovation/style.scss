@@ -1,0 +1,115 @@
+.filters-contaier, .search-contaier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1px 1px var(--clr-main);
+    background: var(--clr-content-bg);
+    transition: var(--clr-transition);
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
+    h6 {
+        font-size: .9rem;
+        margin-bottom: 2rem;
+        padding: 1rem 0;
+        background-color: var(--clr-main);
+        color: var(--clr-white) !important;
+        width: 100%;
+        text-align: center;
+        border-radius: 15px 15px 0 0;
+    }
+
+    input {
+        border: 1px solid #e6e6e6;
+        padding: .3rem .5rem;
+        border-radius: 15px;
+        min-width: 300px;
+        margin-top: 1.5rem;
+    }
+
+    .filters {
+        width: 80%;
+        padding: 0 1rem;
+    }
+}
+
+
+.innovation-request-container {
+
+    h1 {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        color: var(--clr-head-font);
+    }
+}
+
+.innovation-details-container {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--clr-hover);
+
+    h1 {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        color: var(--clr-head-font);
+    }
+    
+    div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 1rem 0;
+
+        span {
+            flex: 1;
+
+            &:last-of-type {
+                flex: 2;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .images {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        span {
+            flex: 1;
+            font-weight: 100 !important;
+        }
+
+        div {
+            margin: 0 .3rem;
+            flex: 2;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            img {
+                width: auto;
+                height: 150px;
+                object-fit: cover;
+                margin: 0 .5rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.innovation-submit-request {
+    margin-top: 2rem;
+
+    h1 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        color: var(--clr-head-font);
+    }
+}

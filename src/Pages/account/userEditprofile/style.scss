@@ -1,0 +1,169 @@
+
+.showModal {
+    display: block !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    transition: all .4s !important;
+    .modal-dialog {
+        top: -15% !important;
+        h5 {
+            color: var(--clr-head-font) !important;
+        }
+
+        p {
+            color: var(--clr-font);
+            font-size: .85rem;
+        }
+    }
+    .modal-dialog {
+        transform: translateY(20%) !important;
+        transition: all .4s !important;
+    }
+    .hideDialoge {
+        transform: translateY(0%) !important;
+    }
+}
+
+
+.editProfile {
+    .tab-content {
+        border: 1px solid #e6e6e6;
+        border-top: none;
+        min-height: 80vh;
+
+        .profileItem {
+            > div {
+                display: flex;
+                align-items: center;
+
+                .smallAlert {
+                    color: var(--clr-font);
+                    height: 100%;
+                    font-size: .75rem;
+                    margin: .1rem .5rem 0 0;
+                }
+                span {
+                    width: 300px;
+                }
+                h6 {
+                    font-size: .9rem;
+                    font-weight: bold;
+                }
+                input, select {
+                    font-size: .9rem;
+                    border: 1px solid #036eb6aa;
+                    padding: .2rem .5rem;
+                    border-radius: 5px;
+                    outline: none;
+                }
+                textarea {
+                    font-size: .9rem;
+                    border: 1px solid #036eb6aa;
+                    padding: .2rem .5rem;
+                    border-radius: 5px;
+                    outline: none;
+                    width: 600px;
+                    min-height: 200px;
+                }
+                .form-check {
+                    width: 80px;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        margin-left: .3rem;
+                    }
+
+                }
+                input[type="text"], input[type="email"] {
+                    width: 250px;
+                }
+                input[type="number"] {
+                    width: 80px;
+                    margin-left: .3rem;
+                }
+                select {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 760px) {
+    .editProfile {
+        .nav-tabs {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            padding: 0 !important;
+        }
+        .nav-item {
+
+            .nav-link {
+                padding: .4rem .2rem;
+                border: 1px solid var(--clr-hover);
+                margin: .2rem;
+                padding: .3rem .6rem;
+            }
+        }
+
+        .tab-content {
+            .profileItem {
+                > div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .form-check {
+                        width: 100px;
+                        display: flex;
+                        align-items: center;
+
+                        label {
+                            margin-right: .6rem;
+                        }
+                    }
+    
+                    .smallAlert {
+                        height: 100%;
+                        font-size: .68rem;
+                        margin: .3rem 0rem 0 0;
+                    }
+                    span {
+                        width: auto;
+                        margin-bottom: .4rem;
+                    }
+                    h6 {
+                        font-size: .85rem;
+                        font-weight: bold;
+                    }
+                    input, select {
+                        font-size: .8rem;
+                        padding: .2rem .5rem;
+                    }
+                    textarea {
+                        font-size: .8rem;
+                        padding: .2rem .5rem;
+                        width: 280px;
+                        min-height: 200px;
+                    }
+                    input[type="text"], input[type="email"] {
+                        width: 280px;
+                    }
+                    input[type="number"] {
+                        width: 90px;
+                        margin-left: .3rem;
+                    }
+                    select {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+  

@@ -1,0 +1,151 @@
+
+.OperatorStatistics {
+
+    .top-five {
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+
+            .col {
+                padding: .2rem .6rem;
+
+                a {
+                    background-color: var(--clr-main);
+                    box-shadow: 0 0 6px rgba(0,0,0,.1);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1rem .5rem;
+                    border-radius: 5px;
+                    color: var(--clr-font);
+                    text-decoration: none;
+                    position: relative;
+                    transition: var(--clr-transition);
+
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        width: 45px;
+                        height: 45px;
+                        background-color: var(--clr-white);
+                        color: var(--clr-main);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: var(--clr-transition);
+                    }
+
+                    h6 {
+                        color: var(--clr-white);
+                        font-size: 1rem;
+                        text-align: center;
+                        font-weight: bold;
+                        margin: 2rem auto 0;
+                    }
+
+                    &:hover {
+                        span {
+                            box-shadow: 0 0 8px rgba(255,255,255,.4);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .top-users-info {
+        background-color: var(--clr-light);
+        transition: var(--clr-transition);
+        box-shadow: 0 0 6px rgba(0,0,0,.1);
+        border-radius: 10px;
+        overflow: hidden;
+
+        h6 {
+            background-color: var(--clr-main);
+            color: var(--clr-white);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .top-users-table {
+            margin: 1rem;
+            border: 1px solid var(--clr-hover);
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid var(--clr-hover);
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                h5 {
+                    flex: 2;
+                    font-size: 1rem;
+                    margin: 0;
+                    padding: .8rem .3rem;
+
+                    &:first-of-type {
+                        flex: 1;
+                        border-left: 1px solid var(--clr-hover);
+                    }
+                }
+            }
+            .form-group {
+                &:last-of-type {
+                    border-bottom: 1px solid var(--clr-hover);
+                }
+
+                h5 {
+                    flex: 1;
+                }
+
+                input {
+                    flex: 2;
+                    margin: .5rem;
+                    border-color: var(--clr-hover) !important;
+                }
+            }
+
+            button {
+                margin: .5rem auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: .3rem 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .top-five {
+        .row {
+            flex-direction: column;
+            align-items: center;
+            .col {
+                a {
+                    flex-direction: row !important;
+                    justify-content: flex-start !important;
+                    span {
+                        margin-left: .8rem;
+                    }
+                    h6 {
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+
+.ticketTabs {
+    width: 100%;
+    margin: auto;
+
+    thead {
+        background: var(--clr-content-bg);
+        color: var(--clr-font);
+        transition: var(--clr-transition);
+        text-align: center;
+    }
+
+    .tab-content {
+        border: 1px solid #f1f1f1;
+        min-height: 430px;
+        border-top: none;
+        transition: var(--clr-transition);
+        padding: 1rem;
+    }
+}
+
+.Tab {
+    div{
+        display: flex;
+        align-items: flex-start;
+
+    }
+    .smallAlert {
+        color: #000;
+        height: 100%;
+        font-size: .7rem;
+        margin: .1rem .5rem 0 0;
+    }
+    label {
+        width: 130px;
+        color: var(--clr-font);
+        transition: var(--clr-transition);
+    }
+}
+
+.ticket-question {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2890c07e;
+    padding: .5rem .3rem .2rem;
+    border-radius: 10px;
+    margin: .5rem 0;
+    >.ticket-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #2890c07e;
+        margin-bottom: .5rem;
+        padding: 0 .5rem;
+        h6 {
+            font-size: .9rem;
+            color: #036EB6;
+        }
+        span {
+            font-size: .7rem;
+            color: #777;
+        }
+    }
+    p {
+        font-size: .75rem;
+        color: #222;
+        padding: .3rem .6rem 0 0;
+    }
+}
+.ticket-answer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #37d3298c;
+    padding: .5rem .3rem;
+    border-radius: 10px;
+    margin: .5rem auto;
+    margin-left: 0;
+    >.ticket-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #999;
+        margin-bottom: .5rem;
+        padding: 0 .5rem;
+        h6 {
+            font-size: .9rem;
+            color: #198f29 !important;
+        }
+        span {
+            font-size: .7rem;
+            color: #777;
+        }
+    }
+    p {
+        font-size: .75rem;
+        color: #222;
+        padding: .3rem .6rem 0 0;
+    }
+}

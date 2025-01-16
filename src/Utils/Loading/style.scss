@@ -1,0 +1,40 @@
+
+.main-loading {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        p {
+            color: var(--clr-white);
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.SmallLoading {
+    p {
+        font-size: .85rem;
+    }
+}

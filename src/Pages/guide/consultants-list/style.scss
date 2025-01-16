@@ -1,0 +1,70 @@
+
+.userContainer {
+    padding: .8rem .5rem;
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--clr-light);
+        transition: var(--clr-transition);
+        border: 1px solid rgba(167, 167, 167, 0.295);
+        border-radius: 10px;
+        text-decoration: none;
+        height: 200px;
+        transition: all .4s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.3);
+            transition: var(--clr-transition);
+            z-index: 2;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            width: 96%;
+            height: 96%;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            transition: var(--clr-transition);
+            z-index: 2;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1);
+            transition: var(--clr-transition);
+        }
+        h1 {
+            color: var(--clr-font);
+            transition: var(--clr-transition);
+            font-size: 1.1rem;
+            font-weight: bold;
+            position: absolute;
+            top: 80%;
+            right: 1rem;
+            z-index: 3;
+            color: #fff;
+        }
+
+        &:hover {
+            &:before {
+                background-color: rgba(0,0,0,0.4);
+            }
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

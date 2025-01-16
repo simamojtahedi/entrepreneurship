@@ -1,0 +1,11 @@
+
+.table {
+    color: var(--clr-font);
+    background: var(--clr-content-bg) !important;
+    transition: var(--clr-transition);
+
+    a {
+        color: var(--clr-head-font) !important;
+        transition: var(--clr-transition);
+    }
+}

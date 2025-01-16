@@ -1,0 +1,27 @@
+
+.breadcrumb_container {
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 10px;
+
+    .breadcrumb {
+        border-radius: 10px;
+        text-align: right;
+        direction: rtl !important;
+        padding: .1rem .5rem;
+        margin: .4rem 0;
+        background: var(--clr-content-bg);
+        color: var(--clr-font);
+        transition: var(--clr-transition);
+        font-size: .85rem;
+        
+        a {
+            text-decoration: none;
+            transition: var(--clr-transition);
+            margin: 0 .2rem;
+        }
+
+        .active {
+            color: var(--clr-quote);
+        }
+    }
+}

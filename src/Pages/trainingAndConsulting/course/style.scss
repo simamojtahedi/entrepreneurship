@@ -1,0 +1,130 @@
+
+.course_info {
+    h1 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin: 2rem auto 0;
+        text-align: center;
+        color: var(--clr-head-font);
+        transition: var(--clr-transition);
+    }
+    img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 5px rgba(0,0,0,.2);
+    }
+
+    .course_info_item {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+
+        span {
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+
+    .course_data_tab {
+        min-height: 200px;
+        border: 1px solid var(--clr-hover);
+        border-top: none;
+        padding: 1rem;
+
+        &:nth-of-type(1) {
+            div {
+                margin: .5rem 0;
+                padding-bottom: .5rem;
+                border-bottom: 1px solid var(--clr-hover);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        &:nth-of-type(2) {
+            text-align: right;
+        }
+
+        &:nth-of-type(3) {
+            td, th {
+                font-size: .85rem;
+            }
+        }
+    }
+}
+
+.course_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    border-radius: 15px;
+    padding: 0;
+    
+    h1 {
+        font-size: 1rem;
+        text-align: center;
+        background-color: var(--clr-main);
+        color: var(--clr-white);
+        padding: 1rem .5rem;
+        border-radius: 15px 15px 0 0;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0 0;
+        border-bottom: 1px solid var(--clr-hover);
+        padding: 0 1rem .5rem;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    button {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.responsive-link {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .course_info {
+        h1 {
+            font-size: 1.1rem;
+        }
+    }
+
+    .course_link {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .responsive-link {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: vaR(--clr-main);
+        transition: var(--clr-transition);
+        padding: .5rem 0;
+    }
+}

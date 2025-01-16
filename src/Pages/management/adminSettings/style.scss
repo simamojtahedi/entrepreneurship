@@ -1,0 +1,34 @@
+
+
+.adminSettings {
+    .tab-content {
+        min-height: 70vh;
+        border: 1px solid var(--clr-hover);
+        border-top: none;
+        padding: 1rem;
+    }
+}
+
+.settings-tab {
+    .settings-tab-content {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 990px) {
+    .settings-tab {
+        .settings-tab-content {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            .switchbtn-container {
+                width: 100%;
+                margin: 1rem;
+                justify-content: flex-start;
+
+            }
+        }
+    }
+}
