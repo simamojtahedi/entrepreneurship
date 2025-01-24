@@ -49,7 +49,7 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Configure .env files as you need and start the server
 
 ```bash
   npm run start
